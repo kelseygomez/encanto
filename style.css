@@ -1,0 +1,67 @@
+
+
+.inback {
+  background-color: white;
+}
+
+#titlefont {
+  font size: 100px;
+  font-family: 'Flamenco', cursive;
+  color: green;
+}
+body {
+  background: darkmagenta
+}
+
+.container {
+  display: flex; 
+  flex-direction: column; 
+
+ .img-text {
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    font-size: 30px;
+
+  }
+
+  .img-description{
+
+
+    position: absolute;
+    padding: 10px;
+    bottom: 35px;
+    left: 16px;
+    font-size: 20px;
+    color: white;
+
+  }
+
+  .image {
+    position:relative;
+   width: 100%;
+   height: auto;
+}
+.image img {
+    width:100%;
+    vertical-align:top;
+}
+.image:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.8);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:hover:after {
+    opacity:1;
+}
+
+}
+
+
+
